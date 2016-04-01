@@ -28,15 +28,9 @@ Plugin 'gmarik/Vundle.vim'
  
 " YOUR LIST OF PLUGINS GOES HERE LIKE THIS:
 Plugin 'scrooloose/nerdtree'
-" Plugin 'kien/ctrlp.vim' " replaced by fzf
-" Plugin 'davidhalter/jedi-vim'
-" Plugin 'klen/python-mode' " (too slow and buggy!)
 Plugin 'tpope/vim-fugitive'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
-" Plugin 'joeytwiddle/sexy_scroller.vim'
-" Plugin 'scrooloose/syntastic'
-" Plugin 'gertjanreynaert/cobalt2-vim-theme'
 
 " add plugins before this
 call vundle#end()
@@ -50,22 +44,9 @@ syntax on
 autocmd! bufwritepost .vimrc source %
 
 let mapleader=","
-" gvim, colorschemes arranged in good to best.
-if has("gui_running")
-    colorscheme Benokai
-    colorscheme flattown
-    colorscheme kalisi
-    colorscheme luna
-    set bs=2
-    set ai
-    highlight ColorColumn guibg=LemonChiffon3
-    set antialias
-else
-    " color wombat256mod
-    " colorscheme flattown
-    " colorscheme luna
-    set t_Co=256
-endif
+" colorscheme
+" colorscheme wombat256mod
+colorscheme ronakg
 
 let g:enable_bold_font = 1
 
